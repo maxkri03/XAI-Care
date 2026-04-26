@@ -1,7 +1,0 @@
-*.png
-*.jsonl
-filter_dataset.py
-
-checkpoints/
-plots/
-results/
