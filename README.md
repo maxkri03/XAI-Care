@@ -15,7 +15,7 @@ streamlit run app.py
 
 1. Patient data + free-text symptoms are structured into sentence-valued features by an LLM.
 2. `llmSHAP` computes Shapley values — masking feature subsets and comparing outputs via embedding similarity.
-3. Results are displayed as color-coded chips (🔴 pushes toward diagnosis, 🔵 suppresses) with percentage impact.
+3. Results are displayed with each feature's percentage impact on the final diagnosis.
 
 ## Stack
 
