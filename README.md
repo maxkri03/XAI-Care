@@ -13,9 +13,10 @@ streamlit run app.py
 
 ## How It Works
 
-1. Patient data + free-text symptoms are structured into sentence-valued features by an LLM.
-2. `llmSHAP` computes Shapley values — masking feature subsets and comparing outputs via embedding similarity.
-3. Results are displayed with each feature's percentage impact on the final diagnosis.
+1. Patient data is structured into sentence-valued features
+2. Each feature is ablated (removed) and the model's output is compared to the full output via **cosine embedding similarity**
+3. The similarity score (not a Shapley value) indicates how much the output changed when that feature was removed
+
 
 ## Stack
 
